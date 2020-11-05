@@ -66,6 +66,13 @@ Secondary Color (Peach): #E58B78;
 .profile {
 	max-width: 700px;
 	margin: 0 auto;
+	margin-bottom: 25px;
+}
+
+.profile1 {
+	max-width: 700px;
+	margin: 0 auto;
+	float: left;
 }
 
 .navigation-list {
@@ -89,12 +96,15 @@ Secondary Color (Peach): #E58B78;
 	background-color: lightgray;
 	padding-left: 40px;
 	padding-right: 40px;
+	margin: 0 auto;
 }
 
 .grid__item1 {
 	background-color: lightgray;
+  margin-right: 30px;
 	padding-left: 40px;
 	padding-right: 40px;
+
 }
 
 body {
@@ -187,6 +197,7 @@ button:focus,
 	-o-transition-property: opacity;
 	transition-property: opacity;
 }
+
 
 .main-navigation-page-header__item {
 	flex-grow: 1;
