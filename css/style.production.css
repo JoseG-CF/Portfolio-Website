@@ -5,6 +5,7 @@
 * Browsers: last 4 version
 */
 
+
 /*  Colors used
 
 Text Color (Black): #000000;
@@ -14,7 +15,7 @@ Secondary Color (Peach): #E58B78;
 
 * {
 	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .profile__portrait {
@@ -31,8 +32,8 @@ Secondary Color (Peach): #E58B78;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	text-align: center;
 }
 
@@ -45,15 +46,20 @@ Secondary Color (Peach): #E58B78;
 }
 
 .page-header__item {
-	-webkit-box-flex: 0;
-	    -ms-flex: 0 1 200px;
-	        flex: 0 1 200px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.main-navigation-page-header__item {
+	float: right;
 }
 
 .page-header__item:last-child {
 	-webkit-box-flex: 1;
-	    -ms-flex-positive: 1;
-	        flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
 	text-align: right;
 }
 
@@ -80,6 +86,12 @@ Secondary Color (Peach): #E58B78;
 }
 
 .grid__item {
+	background-color: lightgray;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.grid__item1 {
 	background-color: lightgray;
 	padding-left: 40px;
 	padding-right: 40px;
@@ -128,23 +140,7 @@ a:active {
 	color: #000000;
 }
 
-.button {
-	border: none;
-	font-family: 'Overpass';
-	background-color: #B6B3B6;
-	color: black;
-	text-decoration: none;
-	padding: 10px;
-	border-radius: 3px;
-	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-	-webkit-transition-duration: 0.9s;
-	     -o-transition-duration: 0.9s;
-	        transition-duration: 0.9s;
-	-webkit-transition-property: opacity;
-	-o-transition-property: opacity;
-	transition-property: opacity;
-}
-
+.button,
 button {
 	border: none;
 	font-family: 'Overpass';
@@ -154,9 +150,9 @@ button {
 	padding: 10px;
 	border-radius: 3px;
 	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-	-webkit-transition-duration: 0.9s;
-	     -o-transition-duration: 0.9s;
-	        transition-duration: 0.9s;
+	-webkit-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 	-webkit-transition-property: opacity;
 	-o-transition-property: opacity;
 	transition-property: opacity;
@@ -165,9 +161,52 @@ button {
 button:hover,
 button:focus,
 .button:hover,
-.button:focus {
+.button:focus,
+.button1:hover,
+.button1:focus {
 	cursor: pointer;
 	opacity: 0.5;
+}
+
+.button1 {
+	border: none;
+	font-family: 'Overpass';
+	background-color: #B6B3B6;
+	color: black;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 10px;
+	border-radius: 3px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+	-webkit-transition-duration: 0.5s;
+	-o-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-transition-property: opacity;
+	-o-transition-property: opacity;
+	transition-property: opacity;
+}
+
+.main-navigation-page-header__item {
+	flex-grow: 1;
+	text-align: right;
+}
+
+.contact-form {
+	text-align: center;
+}
+
+.contact-info {
+	clear: both;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	text-align: center;
 }
 
 @media all and (max-width: 500px) {
@@ -221,20 +260,17 @@ button:focus,
 	}
 }
 
-
-
-
 .right-big-tree {
 	-webkit-animation-duration: 4s;
-	        animation-duration: 4s;
+	animation-duration: 4s;
 	-webkit-animation-name: color-change;
-	        animation-name: color-change;
+	animation-name: color-change;
 	-webkit-animation-iteration-count: infinite;
-	        animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
-	        animation-direction: alternate;
+	animation-direction: alternate;
 	-webkit-animation-timing-function: linear;
-	        animation-timing-function: linear;
+	animation-timing-function: linear;
 }
 
 @keyframes color-change {
@@ -249,18 +285,15 @@ button:focus,
 	}
 }
 
-
-
-
 .left-big-tree {
 	-webkit-animation-duration: 4s;
-	        animation-duration: 4s;
+	animation-duration: 4s;
 	-webkit-animation-name: color-change;
-	        animation-name: color-change;
+	animation-name: color-change;
 	-webkit-animation-iteration-count: infinite;
-	        animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
-	        animation-direction: alternate;
+	animation-direction: alternate;
 	-webkit-animation-timing-function: linear;
-	        animation-timing-function: linear;
+	animation-timing-function: linear;
 }
